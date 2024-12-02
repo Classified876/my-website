@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Robot Task Progress</title>
+    <style>
+      .progress-bar {
+        width: 100%;
+        background-color: #f3f3f3;
+        border: 1px solid #ddd;
+        margin-top: 20px;
+      }
+      .progress-bar div {
+        height: 30px;
+        width: 0;
+        background-color: blue;
+        text-align: center;
+        line-height: 30px;
+        color: white;
+        font-weight: bold;
+      }          
+                  
+    </style>
+  </head>
+<h1 style=background-color:blue><center>Mobile Robotic Quiz</center> </h1>     
+  <body>
+
+<img src="robot1.png" alt="RC truck 2"style="width: 100%; height: auto;"/>
+<section>
+                
+    <h3><center>Please Wait...<br>While your score is loadind..</center></h3>
+    <div class="progress-bar">
+      <div id="progress"></div>
+    </div>
+    <script>
+      let progress = document.getElementById('progress');
+      let width = 0;
+      let interval = setInterval(function() {
+        if (width >= 100) {
+          clearInterval(interval);
+          window.location.href = 'https://youtu.be/dQw4w9WgXcQ?si=vy9-5keC1f5emlOp';
+        } else {
+          width++;
+          progress.style.width = width + '%';
+          progress.textContent = width + '%';
+        }
+      }, 500);
+    </script>
+              </section>
+<footer style= background-color:blue><center><h6>you have just bing trolled by Classified**</h6></footer>
+  </body>
+</html>
